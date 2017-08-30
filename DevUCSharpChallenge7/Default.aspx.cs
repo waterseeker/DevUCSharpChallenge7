@@ -33,7 +33,7 @@ namespace DevUCSharpChallenge7
             {
                 if (numbers[i] == numbers.Max())
                 {
-                    result += String.Format("Most battles belongs to: {0} (Value: {1})", names[i], numbers[i].ToString());
+                    result += String.Format("Most battles belongs to: {0} (Value: {1})<br />", names[i], numbers[i].ToString());
                 }
                 else if(numbers[i] == numbers.Min())
                 {
