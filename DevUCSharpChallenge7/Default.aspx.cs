@@ -28,15 +28,17 @@ namespace DevUCSharpChallenge7
             //and write to the resultLabel
 
             //can't be hard-coded.....
-             
-            int highestValueIndex;
-            int lowestValueIndex ;
+
             for (int i = 0; i < numbers.Length; i++)
             {
-                if (numbers[i] == 17)
+                if (numbers[i] == numbers.Max())
                 {
-                    result += String.Format("Most battles belongs to: " + names[i] + " (Value: " + numbers[i].ToString() + ")");
+                    result += String.Format("Most battles belongs to: {0} (Value: {1})", names[i], numbers[i].ToString());
                 }
+                else if(numbers[i] == numbers.Min())
+                {
+                    result += String.Format("Least battles belongs to: {0} (Value: {1})", names[i], numbers[i].ToString());
+                };
             }
 
             resultLabel.Text = result;
