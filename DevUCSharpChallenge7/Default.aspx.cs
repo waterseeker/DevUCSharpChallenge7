@@ -18,6 +18,22 @@ namespace DevUCSharpChallenge7
 
             int[] numbers = new int[] { 7, 9, 12, 15, 17, 13, 2, 6, 8, 13 };
 
+            //loop through both arrays to display the X-man with the most battles and the 
+            //one with the fewest like this....
+            //Most battles belongs to: Phoenix (Value: 17)
+            //Least battles belongs to: Wolverine (Value: 2)
+
+            //need to store the # and index of # for highest and lowest
+            //then use the indexes to get the names from the other array
+            //and write to the resultLabel
+
+            int highest;
+            int lowest;
+            for (int i = 0; i < length; i++)
+            {
+                if names[i] == "Phoenix" 
+            }
+
             resultLabel.Text = result;
         }
     }
