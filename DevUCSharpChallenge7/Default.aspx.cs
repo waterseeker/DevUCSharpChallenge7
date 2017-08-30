@@ -27,11 +27,16 @@ namespace DevUCSharpChallenge7
             //then use the indexes to get the names from the other array
             //and write to the resultLabel
 
-            int highest;
-            int lowest;
-            for (int i = 0; i < length; i++)
+            //can't be hard-coded.....
+             
+            int highestValueIndex;
+            int lowestValueIndex ;
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if names[i] == "Phoenix" 
+                if (numbers[i] == 17)
+                {
+                    result += String.Format("Most battles belongs to: " + names[i] + " (Value: " + numbers[i].ToString() + ")");
+                }
             }
 
             resultLabel.Text = result;
